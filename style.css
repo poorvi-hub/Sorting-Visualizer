@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 0 20px 30px 0;
+    line-height: 1.4;
+    background-color: rgb(201, 146, 254);
+    font-family: Poppins;
+}
+.custom-newArray{
+   background-color: purple; 
+   color: rgb(201, 146, 254);
+   padding: 10px 20px;
+   border: 2px solid black;
+   border-radius: 5px;
+}
+.custom-newArray:hover {
+    background-color: rgb(201, 146, 254); /* Change background color on hover */
+    color: purple; /* Change text color on hover */
+    border-color: purple; /* Optional: Change border color on hover */
+    cursor: pointer;
+}
+
+/* ------------------------ Size and Speed buttons ----------------------- */
+
+#input{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+.slider-container{
+    gap: 20px;
+    height: 50px;
+}
+.slider-button {
+    background: purple;
+    color:  rgb(201, 146, 254);
+    padding: 5px 5px; /* Padding inside the button */
+    border: 2px solid black;
+    border-radius: 5px; /* Rounded corners */
+    gap: 8px; /* Space between label and slider */
+    cursor: pointer;
+    font-size: 14px; /* Font size */
+    position: relative;
+}
+.slider-button:hover {
+    background-color: rgb(201, 146, 254); /* Change background color on hover */
+    color: purple; /* Change text color on hover */
+    border-color: purple; /* Optional: Change border color on hover */
+}
+/* ----------------------------------******------------------------------- */
+ 
+/* <!-- ------------------ALgo buttons --------------------> */
+
+.algobuttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Center align buttons horizontally */
+    .algobuttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* Space between buttons */
+        justify-content: center; /* Center align buttons horizontally */
+        margin-top: 20px; /* Optional: Adds space above the button group */
+    }
+    
+    .algobutto {
+        background-color: purple;
+        color: rgb(201, 146, 254);
+        padding: 10px 20px;
+        border: 2px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    }
+    
+    .algobutto:hover {
+        background-color: rgb(201, 146, 254); /* Change background color on hover */
+        color: purple; /* Change text color on hover */
+        border-color: purple; /* Optional: Change border color on hover */
+    }
+    
+}
+.algobutto {
+    background-color: purple;
+    color: rgb(201, 146, 254);
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+.algobutto:hover {
+    background-color: rgb(201, 146, 254); /* Change background color on hover */
+    color: purple; /* Change text color on hover */
+    border-color: purple; /* Optional: Change border color on hover */
+}
+
+/* ---------------------------*****--------------------------------- */
+
+
+/* ------------function buttons------------------------ */
+.functionbuttons button.enabled {
+    background-color: purple;
+    color: rgb(201, 146, 254);
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    color: purple;
+    font-weight: 600;
+}
+
+
+.flex-container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    transition: 2s all ease;
+}
+
+.flex-item{
+    background: purple;
+    border: 1pt solid black;
+    width: 10px;
+    transition: 0.1s all ease;
+}
+
+.row{
+    padding-left: 5rem;
+    display: grid;
+    /* grid-template-rows: 5fr 1fr; */
+    grid-template-columns: 1fr 1fr 1.5fr;
+}
+

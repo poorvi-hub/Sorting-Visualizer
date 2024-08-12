@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons.flaticon.com/png/512/2099/premium/2099227.png?token=exp=1658045705~hmac=6aebdd98649297e6044eb45570a08c8c">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="heading">Sorting Visualizer</div>
+        <nav>
+            <div class="row">
+                <!-- //Generate array button -->
+                <div class="flex flex-col sm:flex-row gap-2" id="newArray">
+                    <button type="button" id="newArrayGen" class="custom-newArray">
+                        Generate New Array
+                    </button>
+                </div>
+                <!-- Size and Speed buttons -->
+                <div  class="slider-container" id="input">
+                    <!-- ---------------------***--------------------- -->
+                    
+                        <span id="size" class="slider-button" >Size
+                            <input type="range" min="5" max="100" step= "1" value= "60" id="sizeInput" >
+                        </span>
+                    
+                        <span id="speed" class="slider-button">Speed
+                            <input type="range" min="20" max="300" step= "10" value= "60" id="speedInput" >
+                        </span>
+                
+                    <!-- ----------------------***-------------------- -->
+                </div>
+        
+                <!-- ------------------ALgo buttons -------------------->
+
+                <div class="algobuttons">
+                    <button type="button" class="bubbleSort algobutto">Bubble Sort</button>
+                    <button type="button" class="selectionSort algobutto">Selection Sort</button>
+                    <button type="button" class="insertionSort algobutto">Insertion Sort</button>
+                    <button type="button" class="quickSort algobutto" >Quick Sort</button>
+                    <button type="button" class="mergeSort algobutto">Merge Sort</button>
+                    <button type="button" class="heapSort algobutto">Heap Sort</button>
+                    <button type="button" class="bucketSort algobutto">Bucket Sort</button> <!-- Added Bucket Sort -->
+
+                </div>
+
+                <!-- --------function sorting button---------------- -->
+                 <div class="functionbuttons">
+                    <button id="stopSort" disabled>Stop Sorting</button>
+                    <button id="continueSort" disabled>Continue Sorting</button>
+                    <button id="resetSort">Reset</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="array" class ="flex-container array"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="./algo-js/sorting.js"></script>
+    <script src="./algo-js/bubble.js"></script>
+    <script src="./algo-js/insertion.js"></script>
+    <script src="./algo-js/merge.js"></script>
+    <script src="./algo-js/quick.js"></script>
+    <script src="./algo-js/selection.js"></script>
+    <script src="./algo-js/heap.js"></script>
+    <script src="./algo-js/bucket.js"></script> <!-- Added Bucket Sort script -->
+    <script src="script.js"></script>
+</body>
+</html>
